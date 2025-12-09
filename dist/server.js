@@ -10,8 +10,8 @@ const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)({
     origin: [
-        "http://localhost:5173/",
-        "https://rafael-moraes-info.vercel.app/"
+        "http://localhost:5173",
+        "https://rafael-moraes-info.vercel.app"
     ]
 }));
 app.use(contato_1.default);
