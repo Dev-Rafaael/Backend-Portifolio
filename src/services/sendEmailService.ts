@@ -6,7 +6,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 export async function enviarEmail(body:Email) {
   await resend.emails.send({
-    from: "Contato Portfolio <devrafaael@gmail.com>",
+    from: "Contato Portfolio <onboarding@resend.dev>",
     to: "devrafaael@gmail.com",
     subject: `Novo contato: ${body.motivo}`,
     html: `
