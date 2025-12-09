@@ -7,15 +7,8 @@ import router from "./routes/contato";
 const app = express()
 
 app.use(router)
+app.use(cors());
 app.use(express.json())
-app.use(
-  cors({
-    origin: [
-      "http://localhost:5173",
-      "https://rafael-moraes-info.vercel.app" 
-    ],
-    methods: ["GET", "POST"],
-  })
-);
+
 
 app.listen(3000,()=> 'Ouvindo na Porta 3000')
