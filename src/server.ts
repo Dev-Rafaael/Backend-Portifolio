@@ -13,7 +13,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "https://seu-dominio-do-front.com", // depois coloca o seu domínio real
-      "https://portifolio-frontend.vercel.app" // se usar vercel
+      "https://rafael-moraes-info.vercel.app" 
     ],
     methods: ["GET", "POST"],
   })
